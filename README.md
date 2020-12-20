@@ -12,7 +12,6 @@ Languages used:
 -CSS (
     style of the page 
     some animation including 'active class'
-
 )
 
 -JavaScript
