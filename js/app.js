@@ -42,7 +42,7 @@ let sectionLink = document.querySelectorAll('a');
     window.addEventListener('scroll',function(){
         sections.forEach((sectionList,listIndex) => {
             view = sections[listIndex].getBoundingClientRect();
-            if (sections[listIndex].offsetHeight > view.top && sections[listIndex].offsetHeight < view.bottom) {
+            if (sections[listIndex].offsetHeight-5 > view.top && sections[listIndex].offsetHeight-5 < view.bottom) {
                 sections[listIndex].classList.add('your-active-class');
                 sectionLink.forEach(() => {
                     sectionLink[listIndex].classList.add('your-active-link');
